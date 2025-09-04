@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.MapGet("/", () => "HolidayImagesAPI is running!");
 // wwwroot (static files) – resimler için
 app.UseStaticFiles();
 
