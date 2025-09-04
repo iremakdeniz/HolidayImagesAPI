@@ -1,0 +1,6 @@
+@HolidayImagesAPI_HostAddress = http://localhost:5202
+
+GET {{HolidayImagesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
