@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(opt =>
-    opt.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
+    opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Controller + JSON (cycle ignore)
 builder.Services.AddControllers()
